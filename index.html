@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Abhishek Choudhary </title>
+    
+    <style>
+       /* Please Add All The Styles Here in the Style Tag */
+   *{
+     font-family:Monospace;
+       /*color:#837c7b  ;*/
+   }
+    header{
+      background-color: #181C14;
+      padding :10px;
+      color:#f5dad6;
+    }
+    h1{
+    
+      text-align:center;
+       margin: 0;
+    }   
+     h3{
+    
+      text-align:center;
+       margin: 0;
+    }   
+    #about-div{
+      background-color:#3C3D37;
+      text-align: center;
+    }
+    #about-me-text{
+      color:#f5dad6;
+    }
+    #about-para{
+      padding:30px 30px 5px 30px;
+      font-size:15px;
+      color:#f5dad6;
+    }
+   img {
+    border: 3px solid  #181C14;
+    border-radius: 14px;
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
+    /*width: 80%; */
+    max-width: 450px;
+    height: auto; 
+}
+    #skills-div{
+      background-color:#697565;
+      padding:10px;
+      margin:15px 0px;
+    }
+     #skills-div:hover{
+     
+       background-color: #b8b1b0;
+     }
+    #skills-list{
+      text-align:center;
+      color:#312c2b;
+      font-size: 20px;
+    }
+    #projet-div{
+      display: flex;
+      flex-direction:row;
+      justify-content: between;
+      background-color:#ECDFCC;
+       padding:10px;
+       color:#312c2b;
+    }
+     #projet-div:hover{
+     
+       background-color:#fdccc5;
+     }
+   #contact-div{
+     text-align: center;
+     padding:10px;
+     
+   }
+   #button{
+     color:black;
+     padding:10px;
+   }
+   #button:hover{
+     background-color :#756f6e;
+   }
+   #hidden{
+     display:none;
+     color:#72524d;
+   }
+   .project-content{
+     padding:15px;
+   }
+   
+    </style>
+  </head>
+  <body>
+     <!--Please Code HTML tags Here in the Body Tag-->
+     <header>
+      <h1>Abhishek Choudhary</h1>
+      <h3>Data Analyst</h3>
+     </header>
+    <div id = "about-div">
+      <br>
+      <h3 id ="about-me-text">About me</h2>
+      <p id ="about-para">As a passionate and detail-oriented data enthusiast, I am excited to begin my journey as a Data Analyst. With a strong foundation in data analysis tools such as Excel, Python, and SQL, I am eager to apply my skills to solve real-world problems. I am committed to learning and growing in the field, leveraging data-driven insights to drive business decisions. I am enthusiastic about contributing to a dynamic team and continuously improving my analytical abilities.</p>
+      <br>
+      <img src ="https://assets.onecompiler.app/42zfxtn2m/432nfrz65/IMG_20220115_183735.jpg" height ="400px">
+    </div><br><br>
+     <h3> Skills </h3>
+    <div  id ="skills-div">
+     
+     <strong> <p id = "skills-list">HTML || CSS || PYTHON || POWER BI || DBMS || SQL </strong></p>
+    </div>
+     <br><h3>Projets</h3><br>
+    <div id ="projet-div">
+     
+        <p class ="project-content"> <b>Sales Data Analysis-</b><br><br>
+        In the Sales Data Analysis project, you will clean and preprocess sales data to handle missing values, format dates, and remove duplicates. Through exploratory data analysis (EDA), you will identify top-selling products, analyze sales trends, and calculate key metrics. Finally, you will visualize the data using charts and generate insights to improve sales strategies based on trends and profitability.</p>
+        <p class ="project-content"> <b>Customer Segmentation Analysis-</b><br><br>
+       In the Customer Segmentation Analysis project, you will clean customer data, convert categorical variables, and engineer features such as purchase frequency and amount. Using clustering techniques like K-means, you will segment customers into distinct groups and visualize their characteristics. The goal is to identify customer segments and develop targeted marketing strategies based on their purchasing behavior.</p>
+      <!--</ul>-->
+    </div> 
+    <div id = "contact-div" >
+      <button id ="button" >Contact Me</button>
+      <div >
+      <p id ="hidden"><strong>Phone Number : 8744022475<br>Email ID : abhifbd02@gmail.com</strong>
+      
+      </p>
+      <p></p>
+      </div>
+      
+    </div>
+  </body>
+  <script >
+    // Please Select The HTML Tags Created Above and Attach Events Here
+  
+  const hiddencontent = document.getElementById("hidden");
+  const Button = document.getElementById("button");
+ 
+  
+ button.addEventListener('click', function() {
+   
+    if (hiddencontent.style.display === '' || hiddencontent.style.display === 'none') {
+        hiddencontent.style.display = 'block';
+    } else {
+        hiddencontent.style.display = 'none';
+    }
+});
+
+ 
+  
+  
+  
+  </script>
+</html>
